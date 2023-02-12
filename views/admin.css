@@ -1,0 +1,48 @@
+.maincon{
+    width: 80%;
+    grid-template-columns: 1fr 3fr;
+}
+
+.table{
+    margin: 5%;
+    width: 90%;
+    /* border: 1px solid red; */
+}
+
+.options{
+    display: inline-block;
+    width: 10%;
+    margin: 3% 0% 0% 3% ; 
+    border: none;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.modal-content{
+    width: 40%;
+    height: 75%;
+}
+
+.close{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ind{
+    /* border:1px solid rebeccapurple; */
+    padding: 2% 19%;
+    font-size: 1.5rem;
+}
+.fn{
+    margin: 0px 19% 0px;
+    /* border: 1px solid ; */
+    
+}
+
+.fname{
+    width: 60%;
+    height: 8%;
+    margin: 0px 19% 10px;
+}

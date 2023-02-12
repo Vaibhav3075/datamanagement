@@ -1,0 +1,28 @@
+.maincon{
+    width: 80%;
+    grid-template-columns: 1fr 3fr;
+}
+
+#welstu{
+    /* border: 1px solid black; */
+    display : inline-block;
+    margin: 3%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.778);
+}
+
+.details{
+    /* border: 1px solid black; */
+    width : 90%;
+    margin: auto;
+    display: grid;
+}
+
+.ele{
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 49%;
+    margin: 1%;
+    font-weight: 600;
+}

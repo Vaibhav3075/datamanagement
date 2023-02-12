@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="navbar">
+        <div class="home navele">Home</div>
+        <div class="about navele" onmouseenter="toggle()" onmouseleave="toggle1()">About</div>
+        <div class="student navele">Student</div>
+        <div class="admin navele">Admin</div>
+        <div class="developer navele">Developer</div>
+    </div>
+    <br>
+    
+    <div class="inside">this is a website to display project on mongodb</div> 
+    
+    <div class="maincon">
+        <div class="left">
+            <div class="text">Full Stack School of Technology Raipur</div>
+            </div>
+        <div class="right">
+            <div class="loginstudent" onclick="document.getElementById('id01').style.display='grid'">Login as Student</div>
+            <div class="loginstudent" onclick="document.getElementById('id02').style.display='grid'">Login as Admin</div>
+        </div>
+    </div>
+
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/login" method="POST">
+            <div class="close">
+
+                <h1 onclick="document.getElementById('id01').style.display='none'" class="cross" title="Close Modal">&times;</h1>
+            </div>
+            
+
+            <div class="ls">Login as Student</div><br>
+            <div class="fn">Roll No.:</div>
+            <input type="text" class="fname" name="rollno" placeholder="20113075"></input>
+            <div for="lname" class="fn">Password:</div>
+            <input type="password" class="fname" name="password" placeholder="1"></input>
+            <button type="submit" value="Login" class="slogin">Login</button>
+        </form>
+    </div>
+
+
+
+    <div id="id02" class="modal">
+    
+        <form class="modal-content animate" action="/admin" method="POST">
+                <div class="close">
+
+                    <h1 onclick="document.getElementById('id02').style.display='none'" class="cross" title="Close Modal">&times;</h1>
+                </div>
+                
+
+                <div class="ls">Login as Admin</div><br>
+                <div class="fn">Roll No.:</div>
+                <input type="text" class="fname" name="rollno" placeholder="20113075"></input>
+                <div for="lname" class="fn">Password:</div>
+                <input type="password" class="fname" name="password" placeholder="1"></input>
+                <button type="submit" value="Login" class="slogin">Login</button>
+        
+            
+        
+            
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

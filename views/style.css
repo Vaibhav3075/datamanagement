@@ -1,0 +1,257 @@
+body{
+    background: url("dark-blur-abstract-4k_1551646029.jpg") no-repeat fixed center;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-gap: 2rem;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 4fr ; */
+    background-color: rgb(4, 170, 109);
+    height: 4rem;
+    grid-template-areas: ". a b c d . . . . . . . . . . . e .";
+    margin: -8px;
+    align-items: center;
+    box-shadow: 7px 5px 10px 0px rgb(4, 11, 36);
+}
+
+.navele{
+    /* grid-area: a; */
+    width: auto;
+    /* border: 1px solid white; */
+    color: white;
+    font-size: 1.4rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.navele:hover{
+    background-color: rgb(4, 142, 91);
+    cursor: pointer;
+}
+
+.home{
+    grid-area: a;
+}
+.about{
+    grid-area: b;
+}
+.student{
+    grid-area: c;
+}
+.admin{
+    grid-area: d;
+}
+.developer{
+    grid-area: e;
+}
+
+
+.inside{
+    display: none;
+    position: absolute;
+    top: 9%;
+    width: 40%;
+    height: 100px;
+    border: 1px solid rgb(149, 173, 164);
+    border-radius: 3px;
+    background-color: rgb(197, 229, 217);
+    justify-items: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.maincon{
+    /* border: 2px solid white; */
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0px 0px 40px 10px rgb(4, 11, 36);
+}
+
+.left{
+    display: grid;
+    /* grid-area: l; */
+    /* border: 1px solid greenyellow; */
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(4, 170, 109);
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: 3rem;
+    color: white;
+}
+.text{
+    /* border: 1px solid white; */
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+.right{
+    /* display: grid; */
+    /* grid-area: r; */
+    /* border: 1px solid white; */
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgb(197, 229, 217);
+}
+
+.loginstudent{
+    /* border: 1px solid black; */
+    height: 70px;
+    margin: 5%;
+    width: 60%;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    border-radius: 3px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.loginstudent:hover{
+    box-shadow: 5px 5px 1px 1px rgb(132, 154, 146);
+    scale: 1.05;
+}
+
+
+  
+   
+  
+  
+ 
+ 
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; 
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    /* overflow: auto; Enable scroll if needed */
+    /* background-color: rgb(0,0,0); Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    backdrop-filter: blur(10px);
+    /* padding-top: 100px; */
+}
+
+ 
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 7% auto; /*5% from the top, 15% from the bottom and centered*/
+    border: 1px solid #888;
+    width: 27%; /* Could be more or less, depending on screen size */
+    height: 60%;
+    border-radius: 20px;
+}
+  
+.close{
+    
+    /* border: 1px solid black; */
+    
+    display: grid;
+    /* align-items: center; */
+    justify-content: right;
+    padding-right: 15px;
+}
+
+.cross{
+    /* border: 1px solid black; */
+    /* display: inline-block; */
+    width: 32px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 3rem;
+    /* height: 20px; */
+}
+
+.cross:hover{
+    color: red;
+    cursor: pointer;
+}
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+.fn{
+    margin: 10px 14% 0px;
+    /* border: 1px solid ; */
+    
+}
+
+.fname{
+    width: 70%;
+    height: 10%;
+    margin: 10px 14% 10px;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.ls{
+    height: 60px;
+    margin: auto;
+    width: 60%;
+    background-color: rgb(4, 170, 109);
+    color: white;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+.slogin{
+    width: 30%;
+    height: 10%;
+    margin-left: 35%;
+    margin-top: 3%;
+    background-color: rgb(190, 5, 5);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.slogin:hover{
+    background-color: rgb(142, 3, 3);
+}

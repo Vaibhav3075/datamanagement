@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="home navele">Home</div>
+        <div class="about navele" onmouseenter="toggle()" onmouseleave="toggle1()">About</div>
+        <div class="student navele">Student</div>
+        <div class="admin navele">Admin</div>
+        <div class="developer navele">Developer</div>
+    </div>
+    <br>
+    
+    <div class="inside">this is a website to display project on mongodb</div> 
+    
+    <div class="maincon">
+        <div class="left">
+            <div class="text">Full Stack School of Technology Raipur</div>
+            </div>
+        <div class="right">
+            <button class="options" onclick="document.getElementById('id03').style.display='grid'">New +</button>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Roll No.</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% var i=1 %>
+                  <% for(var ele of data){ %>
+                  <tr>
+                    <th scope="row"><%= i %></th>
+                    <td id="gth"> <%= ele.name %></td> 
+                    <td><%= ele.branch %></td>
+                    <td><%= ele.rollno %></td>
+                    <td></td>
+                  </tr>
+                  <% i++ %>
+                  <% } %>
+                  
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+
+    <div id="id03" class="modal">
+  
+      <form class="modal-content animate" action="/adminpost" method="POST">
+          <div class="close">
+              <div class="ind">Insert new Data</div>
+              <h1 onclick="document.getElementById('id03').style.display='none'" class="cross" title="Close Modal">&times;</h1>
+          </div>
+          
+
+          <!-- <div class="ls">Login </div><br> -->
+          <div class="fn">Name</div>
+          <input type="text" class="fname" name="name" placeholder="eg: Hinata Shoyo" required></input>
+          <div class="fn">Roll No.</div>
+          <input type="text" class="fname" name="rollno" placeholder="eg: 20117933" required></input>
+          <div class="fn">Branch</div>
+          <input type="text" class="fname" name="branch" placeholder="eg: VollyBall"></input>
+          <div class="fn">Date of Birth</div>
+          <input type="text" class="fname" name="dob" placeholder="eg: 14112001" required></input>
+          <div class="fn">Contact No.</div>
+          <input type="text" class="fname" name="contactno" placeholder="eg: 83********"></input>
+          <button type="submit" value="Login" class="slogin">Insert</button>
+      </form>
+  </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
