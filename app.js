@@ -18,9 +18,11 @@ app.use(express.urlencoded({
 
 
 
-mongoose.connect("mongodb://localhost:27017/dmpdb" , {
+mongoose.connect("mongodb+srv://vaibhav:vaibhav@cluster0.hqlab6x.mongodb.net/dmpdb?retryWrites=true&w=majority" , {
     useNewUrlParser : true,
+    // useCreateIndex : true,
     useUnifiedTopology : true
+    // useFindAndModify : false
 })
 .then(()=>{
     console.log("mongodb connection successfull")
